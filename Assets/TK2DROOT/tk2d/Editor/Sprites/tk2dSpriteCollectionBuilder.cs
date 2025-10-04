@@ -842,7 +842,7 @@ public class tk2dSpriteCollectionBuilder
 			gen.atlasWidth = atlasData[0].width;
 			gen.atlasHeight = atlasData[0].height;
 
-			tex.Resize(atlasData[atlasIndex].width, atlasData[atlasIndex].height);
+			tex.Reinitialize(atlasData[atlasIndex].width, atlasData[atlasIndex].height);
 
 			// Clear texture, unsure if this is REALLY necessary
 			// Turns out it is

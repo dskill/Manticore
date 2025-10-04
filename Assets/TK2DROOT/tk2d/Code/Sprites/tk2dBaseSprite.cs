@@ -345,7 +345,7 @@ public abstract class tk2dBaseSprite : MonoBehaviour
 			if (sprite.colliderType == tk2dSpriteDefinition.ColliderType.Box)
 			{
 				boxCollider.center = new Vector3(sprite.colliderVertices[0].x * _scale.x, sprite.colliderVertices[0].y * _scale.y, sprite.colliderVertices[0].z * _scale.z);
-				boxCollider.extents = new Vector3(sprite.colliderVertices[1].x * _scale.x, sprite.colliderVertices[1].y * _scale.y, sprite.colliderVertices[1].z * _scale.z);
+				boxCollider.size = new Vector3(sprite.colliderVertices[1].x * _scale.x, sprite.colliderVertices[1].y * _scale.y, sprite.colliderVertices[1].z * _scale.z);
 			}
 			else if (sprite.colliderType == tk2dSpriteDefinition.ColliderType.Unset)
 			{
@@ -357,7 +357,7 @@ public abstract class tk2dBaseSprite : MonoBehaviour
 				{
 					// move the box far far away, boxes with zero extents still collide
 					boxCollider.center = new Vector3(0, 0, -100000.0f);
-					boxCollider.extents = Vector3.zero;
+					boxCollider.size = Vector3.zero;
 				}
 			}
 		}

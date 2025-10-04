@@ -12,7 +12,9 @@
       "WebFetch(domain:blog.drewskillman.com)",
       "WebFetch(domain:leepetty.blogspot.com)",
       "Bash(git push:*)",
-      "Bash(git log:*)"
+      "Bash(git log:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []

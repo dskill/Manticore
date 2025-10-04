@@ -151,9 +151,9 @@ public class tk2dButton : MonoBehaviour
 		if (GetComponent<Collider>() == null)
 		{
 			BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();
-			Vector3 colliderExtents = newCollider.extents;
+			Vector3 colliderExtents = newCollider.size;
 			colliderExtents.z = 0.2f;
-			newCollider.extents = colliderExtents;
+			newCollider.size = colliderExtents;
 		}
 	}
 	
