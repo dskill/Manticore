@@ -13,7 +13,6 @@ Originally released for free on the iOS App Store in 2012, this project is a his
 - **Event**: Molyjam (What Would Molydeux Do?)
 - **Duration**: 48 hours
 - **Year**: 2012
-- **Concept**: Survival horror meets bowling
 
 ## Team
 
@@ -53,14 +52,6 @@ Watch gameplay footage: [Dead Balls on YouTube](https://www.youtube.com/watch?v=
 ## Technical Details
 
 This is a legacy Unity project (circa 2012) that has been updated for Unity 2019 compatibility. The original game code and assets remain largely unchanged except where required for modern Unity API compatibility.
-
-### Key Technologies
-- Unity3D
-- MonoDevelop / Visual Studio
-- TK2D (2D sprite toolkit)
-- iTween (animation library)
-
-See [CLAUDE.md](CLAUDE.md) for detailed architecture documentation and migration notes.
 
 ## Historical Context
 
