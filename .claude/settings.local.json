@@ -6,7 +6,11 @@
       "Read(//c/**)",
       "Bash(git init:*)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git reset:*)",
+      "Bash(git commit:*)",
+      "WebFetch(domain:blog.drewskillman.com)",
+      "WebFetch(domain:leepetty.blogspot.com)"
     ],
     "deny": [],
     "ask": []
