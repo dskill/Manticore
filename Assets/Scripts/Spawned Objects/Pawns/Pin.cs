@@ -196,6 +196,6 @@ public class Pin : Pawn {
 	protected void FrameCompleted(int frame)
 	{
 		if(hasBeenHit)
-			Destroy(myGameObject);
+			ObjectPoolManager.DestroyPooled(myGameObject);
 	}
 }

@@ -32,11 +32,11 @@ public class FrameActivation : BaseObject {
 		activeFrames[9] = activeFrame10;
 		
 		EventManager.FrameStarted += FrameStarted;
-		
+
 		if(activeFrames[0])
-			gameObject.SetActive(true);
+			SetActiveRecursively(gameObject, true);
 		else
-			gameObject.SetActive(false);
+			SetActiveRecursively(gameObject, false);
 	}
 	
 	void OnDestroy()
@@ -46,12 +46,21 @@ public class FrameActivation : BaseObject {
 	
 	public void FrameStarted(int frame)
 	{
-		if(frame <= 1 || frame > 10)
+		if(frame < 1 || frame > 10)
 			return;
-		
+
 		if(activeFrames[frame-1])
-			gameObject.SetActive(true);
+			SetActiveRecursively(gameObject, true);
 		else
-			gameObject.SetActive(false);
+			SetActiveRecursively(gameObject, false);
+	}
+
+	private void SetActiveRecursively(GameObject obj, bool active)
+	{
+		obj.SetActive(active);
+		foreach(Transform child in obj.transform)
+		{
+			SetActiveRecursively(child.gameObject, active);
+		}
 	}
 }
