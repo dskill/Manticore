@@ -2,6 +2,9 @@
 
 A horror bowling game created during the 48-hour [Molyjam](http://www.molyjam.com/) game jam.
 
+# Play it here (mobile/desktop compatible)
+[PLAY](https://dskill.github.io/Manticore/)
+
 ## About
 
 Dead Balls is a Unity3D bowling game where players roll balls at animated pins in a spooky atmosphere. The game was inspired by the tweet: *"Imagine survival horror mixed with bowling"* and represents a creative interpretation of combining two seemingly incompatible genres.
